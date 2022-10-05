@@ -1,0 +1,63 @@
+/* HEADER */
+
+header {
+  height: var(--header-height);
+  
+  
+
+  /* debug */
+  background-color: rgb(79, 174, 55);
+}
+
+/* /HEADER */
+
+/* MAIN */
+
+main {
+ height: var(--main-height);
+ overflow: auto;
+  /* debug */
+  background-color: rgb(55, 120, 174);
+}
+
+/* main heading */
+
+#main-heading .col {
+  /* debug */
+  height: 100px;
+  
+}
+
+/* /main heading */
+
+/* working area */
+
+#working-area .col div {
+  /* debug */
+  height: 700px;
+  border: 2px solid red;
+}
+
+/* /working area */
+
+/* /MAIN */
+
+/* ASIDE */
+
+aside {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--aside-bg);
+  width: var(--aside-width);
+  height: var(--aside-height);
+}
+
+#aside-t {
+  height: var(--aside-t-height);
+  min-height: 100px;
+}
+
+#aside-b {
+  height: var(--aside-b-height);
+  /* debug */
+  background-color: deeppink;
+}
