@@ -8,10 +8,19 @@
   --aside-b-height: 60px;
   --aside-bg: #051E34;
   --main-height: calc(100vh - var(--header-height));
+  --color-1: #155CBA;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
 

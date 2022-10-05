@@ -11,53 +11,93 @@ header {
 
 /* /HEADER */
 
-/* MAIN */
 
-main {
- height: var(--main-height);
- overflow: auto;
-  /* debug */
-  background-color: rgb(55, 120, 174);
-}
-
-/* main heading */
-
-#main-heading .col {
-  /* debug */
-  height: 100px;
-  
-}
-
-/* /main heading */
-
-/* working area */
-
-#working-area .col div {
-  /* debug */
-  height: 700px;
-  border: 2px solid red;
-}
-
-/* /working area */
-
-/* /MAIN */
 
 /* ASIDE */
 
 aside {
   font-family: 'Poppins', sans-serif;
   background-color: var(--aside-bg);
+  background-image: url('../assets/img/sidebar-bg.png');
   width: var(--aside-width);
   height: var(--aside-height);
 }
 
+aside span {
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+/* aside top */
+
 #aside-t {
   height: var(--aside-t-height);
-  min-height: 100px;
+  min-height: 80px;
 }
+
+#aside-t li {
+  padding: 8px 0;
+}
+
+/* aside bottom */
 
 #aside-b {
   height: var(--aside-b-height);
-  /* debug */
-  background-color: deeppink;
 }
+
+/* /ASIDE */
+
+
+
+/* MAIN */
+
+main {
+  height: var(--main-height);
+  overflow: auto;
+  /* debug */
+  background-color: rgb(55, 120, 174);
+}
+ 
+/* main heading */
+
+#main-heading p {
+  font-size: 0.9rem;
+}
+
+#main-heading i {
+  font-size: 0.7rem;
+}
+
+.rc-btn {
+  padding: 4px 6px;
+  background-color: var(--color-1);
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+.rc-btn.circle {
+  width: 20px;
+  height: 20px;
+  padding:0;
+  border-radius:50%;
+  vertical-align: middle;
+}
+
+.rc-btn:hover {
+  filter: brightness(0.8);
+}
+ 
+/* /main heading */
+ 
+/* working area */
+ 
+#working-area .col div {
+  /* debug */
+  height: 700px;
+  border: 2px solid red;
+}
+ 
+/* /working area */
+ 
+/* /MAIN */
