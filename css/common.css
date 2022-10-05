@@ -9,6 +9,8 @@
   --aside-bg: #051E34;
   --main-height: calc(100vh - var(--header-height));
   --color-1: #155CBA;
+  --color-2: #D8D8D8;
+  --color-3: #F7F7F7;
 }
 
 body {
