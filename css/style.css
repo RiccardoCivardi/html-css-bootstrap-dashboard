@@ -2,12 +2,35 @@
 
 header {
   height: var(--header-height);
-  
-  
-
-  /* debug */
-  background-color: rgb(79, 174, 55);
+  background-color: var(--color-3);
 }
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rc-fm {
+  background-color: var(--color-4);
+  border-left: 0;
+  padding-left: 0;
+}
+
+.rc-fm:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+  background-color: var(--color-4);
+}
+
+#addon-wrapping {
+  border-right: 0;
+}
+
+header nav > div:last-child i {
+  cursor: pointer;
+}
+
 
 /* /HEADER */
 
@@ -63,6 +86,7 @@ main {
 
 .rc-badge-dsh.circle {
   width: 20px;
+  height: 20px;
 }
 
 .rc-badge-dsh:hover {
@@ -97,9 +121,10 @@ main {
 }
 
 .rc-form-check {
-  padding-left: 2rem;
+  padding-left: 2.4rem;
   padding-top: 1rem;
 }
+
 
 /* Tabella */
 
@@ -116,7 +141,6 @@ main {
   text-align: center;
 }
 
-
 .table img {
   width: 25px;
 }
@@ -128,7 +152,7 @@ main {
   font-size: 0.9rem;
 }
 
-
+/* Faq */
 
 #rc-accordion {
   font-size: 0.8rem;
@@ -146,9 +170,28 @@ main {
   border-style: none;
 }
 
-.rc-form-check .form-check {
-  margin-bottom: 0;
-  min-height: 0; 
+#rc-accordion .accordion-button:focus {
+  box-shadow: none;
+  background-color: var(--color-3);
+}
+
+#rc-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  box-shadow: none;
+}
+
+/* Todo */
+
+#todo label,
+#todo input {
+  cursor: pointer;
+}
+
+/* Utenti attivi */
+
+#users-active li {
+  cursor: default;
 }
 
 /* /Dashboard  */

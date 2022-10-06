@@ -36,7 +36,39 @@
 <body>
 
   <!-- HEADER -->
-  <header>HEADER</header>
+  <header class="container-fluid d-flex justify-content-center align-items-center px-0">
+    <nav class="row w-100 bg-white h-75 px-0">
+      <div class="col col-1 d-flex align-items-center pe-0 h-100">
+        <a class="h-100 w-100" href="#">
+          <img class="d-lg-none" src="assets/img/mobile-logo.png" alt="logo-mobile">
+          <img class="d-none d-lg-block" src="assets/img/logo.svg" alt="logo-desktop">
+        </a>
+      </div>
+      <div class="col col-10 d-flex align-items-center">
+        <div class="input-group h-100 flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="text" class="form-control rc-fm" placeholder="Prova a cercare 'Quanti ragazzi di classe 75 mangiano la pizza?'" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+      </div>
+      <div class="col col-1 d-flex align-items-center justify-content-between ps-0">
+        <i class="fa-solid fa-list d-none d-lg-block"></i>
+        <i class="fa-sharp fa-solid fa-circle-question d-none d-lg-block"></i>
+        <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+        <div class="dropdown">
+          <span data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bell text-warning"></i>
+          </span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Prima voce</a></li>
+            <li><a class="dropdown-item" href="#">Seconda voce</a></li>
+            <li><a class="dropdown-item" href="#">Terza voce</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+  </header>
   <!-- /HEADER -->
 
   <!-- MAIN CONTAINER -->
@@ -400,7 +432,7 @@
               <div class="container-fluid py-2">
                 <h3>F.A.Q.</h3>
               </div>
-              <div class="accordion mt-1" id="rc-accordion">
+              <div class="accordion" id="rc-accordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -446,7 +478,7 @@
           <div class="col col-12 col-lg-4">
 
             <!-- Todo -->
-            <div class="card mb-3 overflow-hidden">
+            <div id="todo" class="card mb-3 overflow-hidden">
               <div class="container-fluid py-2">
                 <h3>TODO</h3>
               </div>
@@ -482,7 +514,7 @@
             <!-- /Todo -->
 
             <!-- Utenti attivi -->
-            <div class="card mb-2 overflow-hidden">
+            <div id="users-active" class="card mb-2 overflow-hidden">
               <img class="w-100" src="assets/img/chart.jpg" alt="grafico">
               <ul class="list-group list-group-flush mt-3">
                 <li class="list-group-item">
