@@ -30,18 +30,11 @@ aside span {
 /* aside top */
 
 #aside-t {
-  height: var(--aside-t-height);
-  min-height: 80px;
+  min-height: 105px;
 }
 
 #aside-t li {
   padding: 8px 0;
-}
-
-/* aside bottom */
-
-#aside-b {
-  height: var(--aside-b-height);
 }
 
 /* /ASIDE */
@@ -86,6 +79,10 @@ main {
 /* /main heading */
  
 /* working area */
+
+#working-area {
+  font-size: 0.8rem;
+}
  
 .box {
   border: 1px solid var(--color-2);
@@ -104,6 +101,49 @@ main {
   font-size: 1.3rem;
 }
 
+.rc-tr {
+  border-color: #000;
+}
+
+.rc-tr .col {
+  width: 200px;
+}
+
+.table img {
+  width: 25px;
+}
+
+.status {
+  padding: 3px 6px;
+}
+
+.done::after {
+  content: 'Done';
+}
+
+.process::after {
+  content: 'process';
+}
+
+.failed::after {
+  content: 'failed';
+}
+
+.rc-btn-tb {  
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+#rc-accordion {
+  font-size: 0.8rem;
+}
+
+#rc-accordion .accordion-button {
+  font-size: 0.9rem;
+}
+
 #rc-accordion .accordion-item:first-of-type .accordion-button {
   border-radius: 0;
 }
@@ -112,11 +152,11 @@ main {
   border-style: none;
 }
 
+.rc-form-check .form-check {
+  margin-bottom: 0;
+  min-height: 0; 
+}
+
 /* /working area */
 
-
-
-
-
- 
 /* /MAIN */

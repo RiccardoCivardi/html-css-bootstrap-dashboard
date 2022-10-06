@@ -4,8 +4,6 @@
   --header-height: 60px;
   --aside-width: 7.5%;
   --aside-height: calc(100vh - var(--header-height));
-  --aside-t-height: calc(var(--aside-height) - var(--aside-b-height));
-  --aside-b-height: 60px;
   --aside-bg: #051E34;
   --main-height: calc(100vh - var(--header-height));
   --color-1: #155CBA;
