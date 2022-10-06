@@ -56,23 +56,16 @@ main {
   font-size: 0.7rem;
 }
 
-.rc-btn-mh {
-  padding: 4px 6px;
+.rc-badge-mh {
   background-color: var(--color-1);
   cursor: pointer;
-  font-size: 0.8rem;
-  border-radius: 15px;
 }
 
-.rc-btn-mh.circle {
+.rc-badge-mh.circle {
   width: 20px;
-  height: 20px;
-  padding:0;
-  border-radius:50%;
-  vertical-align: middle;
 }
 
-.rc-btn-mh:hover {
+.rc-badge-mh:hover {
   filter: brightness(0.8);
 }
  
