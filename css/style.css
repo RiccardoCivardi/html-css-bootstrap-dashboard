@@ -46,80 +46,79 @@ main {
   height: var(--main-height);
 }
  
-/* main heading */
+/* Dashboard heading */
 
-#main-heading p {
+#dashboard-heading p {
   font-size: 0.9rem;
 }
 
-#main-heading i {
+#dashboard-heading i {
   font-size: 0.7rem;
 }
 
-.rc-badge-mh {
+.rc-badge-dsh {
   background-color: var(--color-1);
   cursor: pointer;
 }
 
-.rc-badge-mh.circle {
+.rc-badge-dsh.circle {
   width: 20px;
 }
 
-.rc-badge-mh:hover {
+.rc-badge-dsh:hover {
   filter: brightness(0.8);
 }
  
-/* /main heading */
+/* /Dashboard heading */
  
-/* working area */
+/* Dashboard  */
 
-#working-area {
+#dashboard  {
   font-size: 0.8rem;
 }
- 
-.box {
-  border: 1px solid var(--color-2);
-  padding-top:0;
-}
 
-.box .container-fluid {
+.card .container-fluid {
   background-color: var(--color-3);
-  border-bottom: 1px solid var(--color-2);
+  border-bottom: inherit;
 }
  
-.rc-btn-wa {
+.rc-btn-ds {
   padding: 0;
   width: 40px;
   height: 40px;
   font-size: 1.3rem;
 }
 
+
+/* Offcanvas form */
+
+.offcanvas.offcanvas-end.rc-w-100 {
+  width: 100%;
+}
+
+.rc-form-check {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+/* Tabella */
+
 .rc-tr {
   border-color: #000;
 }
 
-.rc-tr .col {
-  width: 200px;
+.table th:not(.table th:first-child) {
+  width: 110px;
 }
+
+.table th:not(.table th:first-child),
+.table td:not(.table td:first-child) {
+  text-align: center;
+}
+
 
 .table img {
   width: 25px;
-}
-
-.status {
-  padding: 3px 6px;
-}
-
-.done::after {
-  content: 'Done';
-}
-
-.process::after {
-  content: 'process';
-}
-
-.failed::after {
-  content: 'failed';
 }
 
 .rc-btn-tb {  
@@ -128,6 +127,8 @@ main {
   height: 30px;
   font-size: 0.9rem;
 }
+
+
 
 #rc-accordion {
   font-size: 0.8rem;
@@ -150,6 +151,6 @@ main {
   min-height: 0; 
 }
 
-/* /working area */
+/* /Dashboard  */
 
 /* /MAIN */

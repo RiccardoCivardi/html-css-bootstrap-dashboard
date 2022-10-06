@@ -1,1 +1,23 @@
 /*** MOBILE FIRST ***/
+
+/* md - tablet */
+
+@media screen and (min-width: 768px) {
+
+  /* Offcanvas form */
+  .offcanvas.offcanvas-end.rc-w-md-50 {
+    width: 50%;
+  }
+  
+}
+
+/* lg -desktop */
+
+@media screen and (min-width: 992px) {
+
+  /* Offcanvas form */
+  .offcanvas.offcanvas-end.rc-w-lg-75 {
+    width: 75%;
+  }
+  
+}

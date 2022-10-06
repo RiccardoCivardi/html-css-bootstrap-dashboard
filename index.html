@@ -83,23 +83,23 @@
     <!-- MAIN -->
     <main class="w-100 overflow-auto">
       
-      <!-- main heading -->
-      <div id="main-heading" class="container-fluid bg-primary text-white pt-4 mb-2">
+      <!-- Dashboard heading -->
+      <div id="dashboard-heading" class="container-fluid bg-primary text-white pt-4 mb-2">
         <div class="row">
           <div class="col col-12 col-lg-8 mb-4">
             <div class="mb-2">
               <h2 class="d-inline me-1">Boolean</h2>
-              <span class="badge rounded-pill rc-badge-mh">Piano blaze</span>
+              <span class="badge rounded-pill rc-badge-dsh">Piano blaze</span>
             </div>
             <div>
-              <span class="badge rounded-pill rc-badge-mh">3 app</span>
+              <span class="badge rounded-pill rc-badge-dsh">3 app</span>
               <i class="fa-solid fa-angles-right d-lg-none"></i>
               <div class="d-inline-block d-lg-none">
-                <span class="badge rounded-pill rc-badge-mh circle d-flex justify-content-center align-items-center">&#x2b;</span>
+                <span class="badge rounded-pill rc-badge-dsh circle d-flex justify-content-center align-items-center">&#x2b;</span>
               </div>
-              <span class="badge rounded-pill rc-badge-mh d-none d-lg-inline">Boolean mobile app</span>
-              <span class="badge rounded-pill rc-badge-mh d-none d-lg-inline">Boolean web app</span>
-              <span class="badge rounded-pill rc-badge-mh d-none d-lg-inline">Boolean blog app</span>
+              <span class="badge rounded-pill rc-badge-dsh d-none d-lg-inline">Boolean mobile app</span>
+              <span class="badge rounded-pill rc-badge-dsh d-none d-lg-inline">Boolean web app</span>
+              <span class="badge rounded-pill rc-badge-dsh d-none d-lg-inline">Boolean blog app</span>
             </div>
           </div>
           <div class="col col-12 col-lg-4 mb-4">
@@ -108,53 +108,112 @@
           </div>
         </div> 
       </div>
-      <!-- /main heading -->
+      <!-- /Dashboard heading -->
 
-      <!-- working area -->
-      <div id="working-area" class="container-fluid">
+      <!-- Dashboard -->
+      <div id="dashboard " class="container-fluid">
         <div class="row">
 
           <div class="col col-12 col-lg-8 mb-3">
 
             <!-- Prossime classi -->
-            <div class="box rounded mb-3 overflow-hidden">
+            <div class="card mb-3 overflow-hidden">
               <div class="container-fluid d-flex justify-content-between align-items-center py-2">
                 <h3>Prossime classi</h3>
-                <button type="button" class="btn btn-outline-primary rc-btn-wa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">&#x2b;</button>
-                <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <button type="button" class="btn btn-outline-primary rc-btn-ds" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#x2b;</button>
+
+                <!-- Offcanvas form -->
+                <div class="offcanvas rc-w-100 rc-w-md-50 rc-w-lg-75 offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Form</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
+
                   <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <div class="row row-cols-1 row-cols-md-2">
+                      <form class="row w-100">
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="example-email" class="form-label">Email</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="example-email">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-12 mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <label for="example-select" class="form-label">Stato</label>
+                          <select class="form-select" aria-label="Default select example" id="example-select">
+                            <option selected>Scegli...</option>
+                            <option value="1">Uno</option>
+                            <option value="2">Due</option>
+                            <option value="3">Tre</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-2 mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-uppercase">Cap</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-12 mb-3">
+                          <label for="formFile" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="col mb-3 form-check rc-form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                        </div>
+                        <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </div>
+                      </form>
+                    </div>
                   </div>
+
                 </div>
+                <!-- Offcanvas form -->
+
               </div>
+
+              <!-- Table-->
               <div class="p-3">
-                <table class="table">
+                <table class="table table-hover">
+
                   <thead>
                     <tr class="rc-tr">
                       <th scope="col">Nome</th>
-                      <th scope="col">Data inizio</th>
-                      <th scope="col">ROI</th>
+                      <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
+                      <th class="d-none d-sm-table-cell" scope="col">ROI</th>
                       <th scope="col">Stato</th>
                       <th scope="col">Azioni</th>
                     </tr>
                   </thead>
+
                   <tbody>
+
                     <tr class="align-middle">
                       <td>
                         <img src="assets/img/class-avatar.jpg" alt="class-avatar">
                         <span>Classe 75</span></td>
-                      <td>
+                      <td class="d-none d-md-table-cell">
                         <span>15 Feb 2021</span>
                       </td>
-                      <td>
+                      <td class="d-none d-sm-table-cell">
                         <span>20%</span>
                       </td>
                       <td>
-                        <span class="status bg-success text-white rounded-1 done"></span>
+                        <span class="badge text-bg-success">Done</span>
                       </td>
                       <td>
                         <button class="btn btn-outline-secondary me-1 rc-btn-tb">
@@ -165,27 +224,179 @@
                         </button> 
                       </td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                      <td>@mdo</td>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 76</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-success">Done</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
                     </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 77</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-warning text-white">process</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
                     </tr>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 78</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-success">Done</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
+                    </tr>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 79</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-danger">failed</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
+                    </tr>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 80</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-success">Done</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
+                    </tr>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 81</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-danger">failed</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
+                    </tr>
+
+                    <tr class="align-middle">
+                      <td>
+                        <img src="assets/img/class-avatar.jpg" alt="class-avatar">
+                        <span>Classe 82</span></td>
+                      <td class="d-none d-md-table-cell">
+                        <span>15 Feb 2021</span>
+                      </td>
+                      <td class="d-none d-sm-table-cell">
+                        <span>20%</span>
+                      </td>
+                      <td>
+                        <span class="badge text-bg-success">Done</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-secondary me-1 rc-btn-tb">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary rc-btn-tb">
+                          <i class="fa-solid fa-trash"></i>
+                        </button> 
+                      </td>
+                    </tr>
+                    
                   </tbody>
+
                 </table>
               </div>
+              <!-- /Table -->
+
             </div>
             <!-- Prossime classi -->
 
             <!-- Faq -->
-            <div class="box rounded overflow-hidden">
+            <div class="card overflow-hidden">
               <div class="container-fluid py-2">
                 <h3>F.A.Q.</h3>
               </div>
@@ -235,7 +446,7 @@
           <div class="col col-12 col-lg-4">
 
             <!-- Todo -->
-            <div class="box rounded mb-3 overflow-hidden">
+            <div class="card mb-3 overflow-hidden">
               <div class="container-fluid py-2">
                 <h3>TODO</h3>
               </div>
@@ -271,7 +482,7 @@
             <!-- /Todo -->
 
             <!-- Utenti attivi -->
-            <div class="box rounded mb-2 overflow-hidden">
+            <div class="card mb-2 overflow-hidden">
               <img class="w-100" src="assets/img/chart.jpg" alt="grafico">
               <ul class="list-group list-group-flush mt-3">
                 <li class="list-group-item">
@@ -292,7 +503,7 @@
 
         </div>
       </div>
-      <!-- /working area -->
+      <!-- /Dashboard  -->
       
     </main>
     <!-- /MAIN -->
